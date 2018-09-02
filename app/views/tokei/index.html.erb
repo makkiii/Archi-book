@@ -1,10 +1,17 @@
 <div class="main">
 <div class="container">
+       <% @tokeis.each do |tokei| %>
+
     <div class="text-index-item">
-      今日から時計ooffffffffffffffffでRailsの勉強するよー！
-    </div>
-    <div class="text-index-item">
-      投稿一覧ページ作成中！
+      <div class="text-item">
+      <%= tokei.item %>
+      </div>
+
+      <div class="text-content">
+        <%= tokei.contents %>
+      </div>
+
+      </div>
+      <% end %>
 </div>
-  </div>
 </div>

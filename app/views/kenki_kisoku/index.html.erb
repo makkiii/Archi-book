@@ -1,10 +1,17 @@
 <div class="main">
 <div class="container">
+       <% @kenkikisokus.each do |kenki_kisoku| %>
+
     <div class="text-index-item">
-      ProgateffffffffffffffffffffffでRailsの勉強するよー！
-    </div>
-    <div class="text-index-item">
-      投稿一覧ページ作成中！
+      <div class="text-item">
+      <%= kenki_kisoku.item %>
+      </div>
+
+      <div class="text-content">
+        <%= kenki_kisoku.contents %>
+      </div>
+
+      </div>
+      <% end %>
 </div>
-  </div>
 </div>

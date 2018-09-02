@@ -1,11 +1,18 @@
 
 <div class="main">
 <div class="container">
+       <% @sihous.each do |sihou| %>
+
     <div class="text-index-item">
-      今日から士法ProgateloooooooffffffffffffffffでRailsの勉強するよー！
-    </div>
-    <div class="text-index-item">
-      投稿一覧ページ作成中！
+      <div class="text-item">
+      <%= sihou.item %>
+      </div>
+
+      <div class="text-content">
+        <%= sihou.contents %>
+      </div>
+
+      </div>
+      <% end %>
 </div>
-  </div>
 </div>

@@ -3,11 +3,20 @@
 
 <div class="main">
 <div class="container">
+    <div class="container">
+       <% @kenkireis.each do |kenki_rei| %>
+
     <div class="text-index-item">
-      今日からProgateloooooooffffffffffffffffでRailsの勉強するよー！
-    </div>
-    <div class="text-index-item">
-      投稿一覧ページ作成中！
+      <div class="text-item">
+      <%= kenki_rei.item %>
+      </div>
+
+      <div class="text-content">
+        <%= kenki_rei.contents %>
+      </div>
+
+      </div>
+      <% end %>
 </div>
   </div>
 </div>
