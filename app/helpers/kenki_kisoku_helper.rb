@@ -1,0 +1,2 @@
+module KenkiKisokuHelper
+end

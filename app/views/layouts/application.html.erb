@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArchiBook</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+
+<header>
+  <div class="header-logo">
+   Archibook
+  </div>
+
+  <span class="fa fa-bars fa-lg menu-icon"></span>
+  <ul class=" header-menus">
+    <li>
+    <a href="/top">TOP</a>
+     </li>
+      <li>
+      <a href="/kenki">建築基準法</a>
+      </li>
+      <li>
+      <a href="/kenki_rei">建築基準法施工令</a>
+      </li>
+      <li>
+      <a href="/kenki_kisoku">建築基準法施行規則</a>
+      </li>
+      <li>
+       <a href="/sihou">建築士法</a>
+      </li>
+                      <li>
+                        <a href="/gyouhou">建設業法</a>
+                    </li>
+                      <li>
+                        <a href="/syoubou">消防法</a>
+                    </li>
+                      <li>
+                        <a href="/tokei">都市計画法</a>
+                    </li>
+
+  </ul>
+</header>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+<div class="main">
+<div class="container">
+       <% @kenkihous.each do |kenki_hou| %>
+
+    <div class="text-index-item">
+      <div class="text-item">
+      <%= kenki_hou.item %>
+      <%= kenki_hou.item号 %>
+      </div>
+      <div class="text-item2">
+        <%= kenki_hou.item2 %>
+      </div>
+      <div class="text-content">
+        <%= kenki_hou.contents %>
+      </div>
+      <div class="text-link">
+        <%= kenki_hou.基準 %>
+      </div>
+
+
+</div>
+
+        <% end %>
+
+
+
+  </div>
+</div>
