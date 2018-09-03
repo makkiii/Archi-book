@@ -11,8 +11,9 @@ html {
 
 ul, li {
   list-style-type: none;
-  padding: 0;
+  padding: 1px 3px 1px 1px;
   margin: 0;
+  float:left;
 }
 
 a {
@@ -50,15 +51,9 @@ body {
   height: auto;
   min-height: 100%;
   background-color: #f5f8fa;
+  display:block;
 }
 
-.container {
-  max-width: 100%;
-  margin: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  clear: both;
-}
 
 /* ヘッダー ================================ */
 header {
@@ -98,7 +93,7 @@ header {
 .header-menus a {
   float: left;
   font-size: 13px;
-  color: wblack;
+  color: black;
 }
 
 .header-menus .fa {
@@ -220,6 +215,16 @@ header {
 }
 
 /* 追加=========20180831======================= */
+.top-container{
+  max-width: 100%;
+  margin: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float:left;
+
+}
+
+
 .content {
   float: left;
   width: 20%;

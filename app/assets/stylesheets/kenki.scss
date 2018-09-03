@@ -1,7 +1,24 @@
+.container {
+  max-width: 70%;
+  margin: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float:left;
+}
+
+.container-side{
+    max-width: 30%;
+    margin: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float:left;
+}
+
+
 
 /* text/index ================================ */
 .text-index-item {
-  padding: 20px 30px;
+  padding: 5px 10px 10px 10px;
   background-color: white;
   overflow: hidden;
   box-shadow:  0 3px 2px #c1ced7;
@@ -12,7 +29,7 @@
 
 .text-item {
   float: left;
-  width: 12%;
+
 }
 
 .text-item2 {
