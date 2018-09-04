@@ -14,4 +14,20 @@
       </div>
       <% end %>
 </div>
+
+<div class="container">
+       <% @likenkikisokus.each do |li_kenki_kisoku| %>
+
+    <div class="text-index-item">
+      <div class="text-item">
+      <%= li_kenki_kisoku.list %>
+      </div>
+
+      <div class="text-content">
+        <%= li_kenki_kisoku.list2 %>
+      </div>
+
+      </div>
+      <% end %>
+</div>
 </div>

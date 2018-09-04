@@ -17,5 +17,16 @@
       </div>
       <% end %>
 
+<div class="container-side">
+  <% @likenkireis.each do |li_kenki_rei| %>
+  <div class="text-index-item">
+    <div class="text-item">
+      <a> <%= li_kenki_rei.list %></a>
+       <a> <%= li_kenki_rei.list2 %></a>
+      </div>
+    </div>
+<% end %>
+  </div>
+
   </div>
 </div>

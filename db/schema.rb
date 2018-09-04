@@ -98,38 +98,38 @@ ActiveRecord::Schema.define(version: 20180904093523) do
   end
 
   create_table "li_gyouhous", force: :cascade do |t|
-    t.text "text",     limit: 65535, null: false
-    t.text "textCopy", limit: 65535, null: false
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535, null: false
   end
 
   create_table "li_kenki_kisokus", force: :cascade do |t|
-    t.text "text",     limit: 65535
-    t.text "textCopy", limit: 65535
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535
   end
 
-  create_table "li_kenki_leis", force: :cascade do |t|
-    t.text "text",     limit: 65535, null: false
-    t.text "textCopy", limit: 65535, null: false
+  create_table "li_kenki_reis", force: :cascade do |t|
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535, null: false
   end
 
   create_table "li_kenkihous", force: :cascade do |t|
-    t.text "list",     limit: 65535, null: false
-    t.text "listCopy", limit: 65535, null: false
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535, null: false
   end
 
   create_table "li_sihous", force: :cascade do |t|
-    t.text "text",     limit: 65535, null: false
-    t.text "textCopy", limit: 65535, null: false
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535, null: false
   end
 
   create_table "li_syoubous", force: :cascade do |t|
-    t.text "text",     limit: 65535, null: false
-    t.text "textCopy", limit: 65535, null: false
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535, null: false
   end
 
   create_table "li_tokeis", force: :cascade do |t|
-    t.text "text",     limit: 65535, null: false
-    t.text "textCopy", limit: 65535, null: false
+    t.text "list",  limit: 65535, null: false
+    t.text "list2", limit: 65535, null: false
   end
 
   create_table "sihous", id: false, force: :cascade do |t|

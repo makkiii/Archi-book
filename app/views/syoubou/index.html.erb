@@ -14,4 +14,19 @@
       </div>
       <% end %>
 </div>
+<div class="container">
+       <% @lisyoubous.each do |li_syoubou| %>
+
+    <div class="text-index-item">
+      <div class="text-item">
+      <%= li_syoubou.list %>
+      </div>
+
+      <div class="text-content">
+        <%= li_syoubou.list2 %>
+      </div>
+
+      </div>
+      <% end %>
+</div>
 </div>

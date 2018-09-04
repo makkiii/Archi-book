@@ -14,4 +14,19 @@
       </div>
       <% end %>
 </div>
+<div class="container">
+       <% @litokeis.each do |li_tokei| %>
+
+    <div class="text-index-item">
+      <div class="text-item">
+      <%= li_tokei.list %>
+      </div>
+
+      <div class="text-content">
+        <%= li_tokei.list2 %>
+      </div>
+
+      </div>
+      <% end %>
+</div>
 </div>
