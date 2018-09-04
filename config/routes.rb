@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get '/kenki' => "kenki#index"
 
+
   get '/kenki_rei' => "kenki_rei#index"
 
   get '/kenki_kisoku' => "kenki_kisoku#index"

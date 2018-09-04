@@ -25,14 +25,13 @@
   </div>
 
 <div class="container-side">
+  <% @likenkihous.each do |li_kenkihou| %>
   <div class="text-index-item">
     <div class="text-item">
-      <a>wwwww</a>
-      <a>wwwww</a>
-      <a>wwww</a>
+      <a> <%= li_kenkihou.list %></a>
       </div>
     </div>
-
+<% end %>
   </div>
 
 
