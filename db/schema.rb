@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180901125035) do
+ActiveRecord::Schema.define(version: 20180904081811) do
 
   create_table "gyouhous", id: false, force: :cascade do |t|
     t.text "gyoid",    limit: 65535, null: false
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20180901125035) do
     t.text "graf2",    limit: 65535, null: false
   end
 
-  create_table "kenki_hous", id: false, force: :cascade do |t|
+  create_table "kenki_hous", force: :cascade do |t|
     t.text "kijyun",   limit: 65535, null: false
     t.text "item",     limit: 65535, null: false
     t.text "item号",    limit: 65535, null: false
@@ -97,17 +97,29 @@ ActiveRecord::Schema.define(version: 20180901125035) do
     t.text "graf10",    limit: 65535, null: false
   end
 
+  create_table "li_kenkihous", force: :cascade do |t|
+    t.text     "list",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "sihous", id: false, force: :cascade do |t|
-    t.text "士法",        limit: 65535, null: false
-    t.text "item",      limit: 65535, null: false
-    t.text "contents",  limit: 65535, null: false
-    t.text "kijyun",    limit: 65535, null: false
-    t.text "kijyunid",  limit: 65535, null: false
-    t.text "sihouCopy", limit: 65535, null: false
-    t.text "rei",       limit: 65535, null: false
-    t.text "reiid",     limit: 65535, null: false
-    t.text "kisoku",    limit: 65535, null: false
-    t.text "kisokuid",  limit: 65535, null: false
+    t.text "sihou",    limit: 65535, null: false
+    t.text "item",     limit: 65535, null: false
+    t.text "contents", limit: 65535, null: false
+    t.text "kijyun",   limit: 65535, null: false
+    t.text "kijyunid", limit: 65535, null: false
+    t.text "rei",      limit: 65535, null: false
+    t.text "reiid",    limit: 65535, null: false
+    t.text "kisoku",   limit: 65535, null: false
+    t.text "kisokuid", limit: 65535, null: false
+    t.text "その他",      limit: 65535, null: false
+    t.text "graf",     limit: 65535, null: false
+    t.text "graf2",    limit: 65535, null: false
+    t.text "graf3",    limit: 65535, null: false
+    t.text "graf4",    limit: 65535, null: false
+    t.text "graf5",    limit: 65535, null: false
+    t.text "graf6",    limit: 65535, null: false
   end
 
   create_table "syoubous", id: false, force: :cascade do |t|
