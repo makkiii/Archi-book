@@ -1,7 +1,11 @@
 
-
+<i class="slide-library__language-btn fa fa-chevron-down " >
+  </i>
 
 <div class="main">
+
+
+
 <div class="container">
        <% @kenkihous.each do |kenki_hou| %>
 
@@ -24,20 +28,36 @@
         <% end %>
   </div>
 
+
 <div class="container-side">
-  <% @likenkihous.each do |li_kenkihou| %>
-  <div class="text-index-item">
-    <div class="text-item">
-      <a> <%= li_kenkihou.list %></a>
-       <a> <%= li_kenkihou.list2 %></a>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label1" />
+       <label for="label1">第1章総 則</label>
+          <div lass="text-item">
+          <% @likenkihou1s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
       </div>
     </div>
-<% end %>
-  </div>
 
-
-
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label2" />
+       <label for="label2">第2章 建築物の敷地，構造及び建築設備</label>
+          <div lass="text-item">
+          <% @likenkihou2s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
 
 </div>
+
+
+
 
 </div>
