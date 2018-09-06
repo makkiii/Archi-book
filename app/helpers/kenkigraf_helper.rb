@@ -1,0 +1,2 @@
+module KenkigrafHelper
+end

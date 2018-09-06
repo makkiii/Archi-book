@@ -1,7 +1,9 @@
 
 
-
 <div class="main">
+
+
+
 <div class="container">
        <% @kenkihous.each do |kenki_hou| %>
 
@@ -24,20 +26,132 @@
         <% end %>
   </div>
 
+
 <div class="container-side">
-  <% @likenkihous.each do |li_kenkihou| %>
-  <div class="text-index-item">
-    <div class="text-item">
-      <a> <%= li_kenkihou.list %></a>
-       <a> <%= li_kenkihou.list2 %></a>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label1" />
+       <label for="label1">第1章総 則</label>
+          <div lass="text-item">
+          <% @likenkihou1s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
       </div>
     </div>
-<% end %>
-  </div>
 
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label2" />
+       <label for="label2">第2章 建築物の敷地，構造及び建築設備</label>
+          <div lass="text-item">
+          <% @likenkihou2s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
 
+     <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label3" />
+       <label for="label3">第3章 都市計画区域等における建築物の敷地，構造，建築設備及び用途</label>
+          <div lass="text-item">
+          <% @likenkihou3s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
 
+   <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label4" />
+       <label for="label4">第3章の2 型式適合認定等</label>
+          <div lass="text-item">
+          <% @likenkihou4s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+   <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label5" />
+       <label for="label5">第4章 建築協定</label>
+          <div lass="text-item">
+          <% @likenkihou5s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label6" />
+       <label for="label6">第4章の2 指定資格検定機関等</label>
+          <div lass="text-item">
+          <% @likenkihou6s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label7" />
+       <label for="label7">第4章の3 建築基準適合判定資格者の登録</label>
+          <div lass="text-item">
+          <% @likenkihou7s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label8" />
+       <label for="label8">第5章 建築審査会</label>
+          <div lass="text-item">
+          <% @likenkihou8s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label9" />
+       <label for="label9">第6章雑 則</label>
+          <div lass="text-item">
+          <% @likenkihou9s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-index-item">
+     <div class="switchbox">
+      <input type="checkbox" id="label10" />
+       <label for="label10">第7章罰 則</label>
+          <div lass="text-item">
+          <% @likenkihou10s.each do |li_kenkihou| %>
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
 
 </div>
+
+
+
 
 </div>
