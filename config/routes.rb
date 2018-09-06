@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/kenki/graf' => "kenkigraf#graf"
+
   get '/tokei'  => "tokei#index"
 
   get '/syoubou' => "syoubou#index"
