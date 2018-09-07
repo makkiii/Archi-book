@@ -9,17 +9,21 @@
 
     <div class="text-index-item">
       <div class="text-item">
-      <li><%= kenki_hou.item %></li>
+      <li name="<%= kenki_hou.kijyun %>"><%= kenki_hou.item %></li>
       <li><%= kenki_hou.item号 %></li>
       <li><%= kenki_hou.item2 %></li>
-      </div>
-      <div class="text-item2">
       </div>
       <div class="text-content">
         <%= kenki_hou.contents %>
       </div>
       <div class="text-link">
-        <%= kenki_hou.基準 %>
+       <a href="/kenki_rei#<%= kenki_hou.令id %>"><%= kenki_hou.令 %></a>
+      </div>
+      <div class="text-link">
+       <a href="/kenki_kisoku#<%= kenki_hou.規則id %>"><%= kenki_hou.規則 %></a>
+      </div>
+      <div class="text-link">
+       <a href="/kenki_sihou#<%= kenki_hou.士id %>"><%= kenki_hou.士 %></a>
       </div>
       </div>
 
