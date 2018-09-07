@@ -6,12 +6,16 @@
        <% @kenkireis.each do |kenki_rei| %>
 
     <div class="text-index-item">
-      <div class="text-item">
+      <div class="text-item" id="<%= kenki_rei.令id %>">
       <%= kenki_rei.item %>
+
       </div>
 
       <div class="text-content">
         <%= kenki_rei.contents %>
+
+
+
       </div>
 
       </div>

@@ -8,7 +8,7 @@
     <div class="graf-index-item">
       <div class="graf-text-item">
        <table border>
-        <% @kenkihous.each do |kenkihou| %>
+        <% @kenkihousgraf1.each do |kenkihou| %>
 
       <tr><th><li class="graf-box"><%= kenkihou.graf %></li></th>
         <th><li class="graf-box"><%= kenkihou.graf2 %></li></th>
@@ -17,6 +17,39 @@
        <% end %>
        </table>
       </div>
+    </div>
+
+        <div class="graf-index-item">
+        <div class="graf-text-item">
+        <table border>
+        <% @kenkihousgraf2.each do |kenkihou| %>
+
+      <tr><th><li class="graf-box"><%= kenkihou.graf %></li></th>
+        <th><li class="graf-box"><%= kenkihou.graf2 %></li></th>
+        <th><li class="graf-box"><%= kenkihou.graf3 %></li></th></tr>
+
+       <% end %>
+       </table>
+      </div>
+    </div>
+
+  <div class="graf-index-item">
+        <div class="graf-text-item">
+        <table border>
+        <% @kenkihousgraf3.each do |kenkihou| %>
+
+      <tr><th><li class="graf-box"><%= kenkihou.graf %></li></th>
+        <th><li class="graf-box"><%= kenkihou.graf2 %></li></th>
+        <th><li class="graf-box"><%= kenkihou.graf3 %></li></th>
+      <th><li class="graf-box"><%= kenkihou.graf3 %></li></th>
+      <th><li class="graf-box"><%= kenkihou.graf4 %></li></th></tr>
+
+       <% end %>
+       </table>
+      </div>
+    </div>
+
+
 
 
 
@@ -26,7 +59,7 @@
       <div class="graf-text-link">
 
       </div>
-      </div>
+
 
 
   </div>
