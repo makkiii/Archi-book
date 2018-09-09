@@ -9,7 +9,7 @@
 
     <div class="text-index-item">
       <div class="text-item">
-      <li name="<%= kenki_hou.kijyun %>"><%= kenki_hou.item %></li>
+      <li id="<%= kenki_hou.kijyun %>"><%= kenki_hou.item %></li>
       <li><%= kenki_hou.item号 %></li>
       <li><%= kenki_hou.item2 %></li>
       </div>
@@ -39,7 +39,8 @@
        <label for="label1">第1章総 則</label>
           <div lass="text-item">
           <% @likenkihou1s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <a href="#<%= li_kenkihou.kijyunid %>"><p>
+            <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
