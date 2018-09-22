@@ -2,7 +2,7 @@ class KenkiController < ApplicationController
   def index
       @kenkihous= KenkiHou.all
       @likenkihous=LiKenkihou.all
-      @likenkihou1s=LiKenkihou.where(id:1..38)
+      @likenkihou1s=LiKenkihou.where(id:2..39)
       @likenkihou2s=LiKenkihou.where(id:40..66)
       @likenkihou3s=LiKenkihou.where(id:68..131)
       @likenkihou4s=LiKenkihou.where(id:133..149)

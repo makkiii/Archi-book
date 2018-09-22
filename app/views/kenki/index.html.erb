@@ -52,7 +52,8 @@
        <label for="label2">第2章 建築物の敷地，構造及び建築設備</label>
           <div lass="text-item">
           <% @likenkihou2s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -64,7 +65,8 @@
        <label for="label3">第3章 都市計画区域等における建築物の敷地，構造，建築設備及び用途</label>
           <div lass="text-item">
           <% @likenkihou3s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+           <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -76,7 +78,8 @@
        <label for="label4">第3章の2 型式適合認定等</label>
           <div lass="text-item">
           <% @likenkihou4s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+           <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -88,7 +91,8 @@
        <label for="label5">第4章 建築協定</label>
           <div lass="text-item">
           <% @likenkihou5s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+           <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -100,7 +104,8 @@
        <label for="label6">第4章の2 指定資格検定機関等</label>
           <div lass="text-item">
           <% @likenkihou6s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+           <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -112,7 +117,8 @@
        <label for="label7">第4章の3 建築基準適合判定資格者の登録</label>
           <div lass="text-item">
           <% @likenkihou7s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -124,7 +130,8 @@
        <label for="label8">第5章 建築審査会</label>
           <div lass="text-item">
           <% @likenkihou8s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -136,7 +143,8 @@
        <label for="label9">第6章雑 則</label>
           <div lass="text-item">
           <% @likenkihou9s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
@@ -148,7 +156,8 @@
        <label for="label10">第7章罰 則</label>
           <div lass="text-item">
           <% @likenkihou10s.each do |li_kenkihou| %>
-          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p>
+          <a href="#<%= li_kenkihou.kijyunid %>">
+          <p> <%= li_kenkihou.list %>  <%= li_kenkihou.list2 %></p></a>
           <% end %>
         </div>
       </div>
